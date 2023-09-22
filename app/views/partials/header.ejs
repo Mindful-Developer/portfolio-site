@@ -1,5 +1,5 @@
-<header class="bg-blue-500 p-4 flex justify-between items-center">
-    <a href="/" class="flex items-center">
+<header class="bg-blue-500 flex justify-between items-center">
+    <a href="/" class="flex items-center p-4">
         <!-- Logo -->
         <img src="/images/cloud-logo.svg" alt="cloud logo with down arrow" class="h-16">
         <div>
@@ -15,12 +15,37 @@
     </button>
 
     <!-- Navigation Links -->
-    <nav class="hidden flex-col w-full bg-blue-500 fixed top-24 left-0 z-20
-                md:flex md:flex-row md:w-auto md:static md:bg-transparent">
-        <a href="/" class="text-white p-2 lg:p-5 hover:bg-blue-700">Home</a>
-        <a href="/about" class="text-white p-2 lg:p-5 hover:bg-blue-700">About Me</a>
-        <a href="/projects" class="text-white p-2 lg:p-5 hover:bg-blue-700">Projects</a>
-        <a href="/services" class="text-white p-2 lg:p-5 hover:bg-blue-700">Services</a>
-        <a href="/contact" class="text-white p-2 lg:p-5 hover:bg-blue-700">Contact Me</a>
+    <nav id="navLinks" class="hidden flex-col w-full bg-blue-500 fixed top-24 left-0 z-20
+                md:flex md:flex-row md:w-auto md:static md:items-stretch md:h-full md:py-0">
+
+        <% if (title === "Home") { %>
+            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Home</p>
+        <% } else { %>
+            <a href="/" class="text-white p-2 lg:p-5 hover:bg-blue-700">Home</a>
+        <% } %>
+
+        <% if (title === "About") { %>
+            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">About Me</p>
+        <% } else { %>
+            <a href="/about" class="text-white p-2 lg:p-5 hover:bg-blue-700">About Me</a>
+        <% } %>
+
+        <% if (title === "Projects") { %>
+            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Projects</p>
+        <% } else { %>
+            <a href="/projects" class="text-white p-2 lg:p-5 hover:bg-blue-700">Projects</a>
+        <% } %>
+
+        <% if (title === "Services") { %>
+            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Services</p>
+        <% } else { %>
+            <a href="/services" class="text-white p-2 lg:p-5 hover:bg-blue-700">Services</a>
+        <% } %>
+
+        <% if (title === "Contact") { %>
+            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Contact Me</p>
+        <% } else { %>
+            <a href="/contact" class="text-white p-2 lg:p-5 hover:bg-blue-700">Contact Me</a>
+        <% } %>
     </nav>
 </header>
