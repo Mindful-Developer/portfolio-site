@@ -1,7 +1,7 @@
-<header class="bg-blue-500 flex justify-between items-center">
+<header class="bg-blue-500 dark:bg-slate-900 flex justify-between items-center">
     <a href="/" class="flex items-center p-4">
         <!-- Logo -->
-        <img src="/images/cloud-logo.svg" alt="cloud logo with down arrow" class="h-16">
+        <img src="/images/cloud-logo.svg" alt="cloud logo" aria-label="Illustration of a cloud with cogs inside and an arrow pointing up into the cloud" class="h-16">
         <div>
             <p class="text-white text-xl font-bold">Christopher James</p>
             <p class="text-white text-sm">Cloud Engineer</p>
@@ -10,42 +10,53 @@
 
 
     <!-- Hamburger Menu - visible on small screens -->
-    <button id="menuToggle" class="md:hidden p-2 hover:bg-blue-700">
-        <img src="/images/hamburger.svg" alt="hamburger menu icon" class="h-6">
+    <button id="menuToggle" aria-label="Open Navigation Menu" class="md:hidden p-2 hover:bg-blue-700 dark:hover:bg-slate-800">
+        <img src="/images/hamburger.svg" aria-label="Hamburger menu icon" alt="hamburger menu icon" class="h-6">
     </button>
 
     <!-- Navigation Links -->
-    <nav id="navLinks" class="hidden flex-col w-full bg-blue-500 fixed top-24 left-0 z-20
-                md:flex md:flex-row md:w-auto md:static md:items-stretch md:h-full md:py-0">
+    <nav id="navLinks" aria-label="Primary Navigation" class="hidden text-gray-100 flex-col w-full bg-blue-500
+                                   dark:bg-slate-900 fixed top-24 left-0 z-20 md:w-auto md:flex md:static">
+        <ul class="md:flex md:items-end md:mx-3">
+            <li>
+                <% if (title === "Home") { %>
+                    <p aria-label="Current page: Home" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Home</p>
+                <% } else { %>
+                    <a href="/" aria-label="Home Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Home</a>
+                <% } %>
+            </li>
 
-        <% if (title === "Home") { %>
-            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Home</p>
-        <% } else { %>
-            <a href="/" class="text-white p-2 lg:p-5 hover:bg-blue-700">Home</a>
-        <% } %>
+            <li>
+                <% if (title === "About") { %>
+                    <p aria-label="Current page: About Me" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">About Me</p>
+                <% } else { %>
+                    <a href="/about" aria-label="About Me Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">About Me</a>
+                <% } %>
+            </li>
 
-        <% if (title === "About") { %>
-            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">About Me</p>
-        <% } else { %>
-            <a href="/about" class="text-white p-2 lg:p-5 hover:bg-blue-700">About Me</a>
-        <% } %>
+            <li>
+                <% if (title === "Projects") { %>
+                    <p aria-label="Current page: Projects" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Projects</p>
+                <% } else { %>
+                    <a href="/projects" aria-label="Projects Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Projects</a>
+                <% } %>
+            </li>
 
-        <% if (title === "Projects") { %>
-            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Projects</p>
-        <% } else { %>
-            <a href="/projects" class="text-white p-2 lg:p-5 hover:bg-blue-700">Projects</a>
-        <% } %>
+            <li>
+                <% if (title === "Services") { %>
+                    <p aria-label="Current page: Services" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Services</p>
+                <% } else { %>
+                    <a href="/services" aria-label="Services Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Services</a>
+                <% } %>
+            </li>
 
-        <% if (title === "Services") { %>
-            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Services</p>
-        <% } else { %>
-            <a href="/services" class="text-white p-2 lg:p-5 hover:bg-blue-700">Services</a>
-        <% } %>
-
-        <% if (title === "Contact") { %>
-            <p class="text-white p-2 lg:p-5 bg-blue-700 font-bold">Contact Me</p>
-        <% } else { %>
-            <a href="/contact" class="text-white p-2 lg:p-5 hover:bg-blue-700">Contact Me</a>
-        <% } %>
+            <li>
+                <% if (title === "Contact") { %>
+                    <p aria-label="Current page: Contact Me" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Contact Me</p>
+                <% } else { %>
+                    <a href="/contact" aria-label="Contact Me Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Contact Me</a>
+                <% } %>
+            </li>
+        </ul>
     </nav>
 </header>

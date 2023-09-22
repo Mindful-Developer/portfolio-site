@@ -1,52 +1,56 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main class="container mx-auto">
-    <section class="text-center m-6 md:m-12">
+<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100">
+    <section aria-label="Welcome Section" class="text-center m-6 md:m-12">
         <h1 class="text-4xl font-extrabold mb-4">Welcome to My Portfolio</h1>
         <p class="text-lg mb-8">I'm Christopher James, an aspiring Cloud Engineer with a passion for learning and
             building innovative solutions.</p>
     </section>
 
-    <section class="grid lg:grid-cols-2 gap-6 mb-6 mx-6 md:mx-12">
-        <div class="bg-blue-100 p-6 rounded-md flex items-center hover:bg-blue-200 hover:shadow-md transition duration-300 ease-in-out">
-            <img src="/images/about.svg" alt="About Me" class="w-24 h-24 object-cover mr-4"/>
+    <section aria-label="Portfolio Sections" class="grid lg:grid-cols-2 gap-6 mb-6 mx-6 md:mx-12">
+        <div class="bg-blue-100 p-6 rounded-xl flex items-center hover:bg-blue-200 hover:shadow-md transition
+                    duration-300 ease-in-out dark:bg-slate-700 dark:hover:bg-slate-800">
+            <img src="/images/about.svg" alt="About Me" aria-label="Illustration of a question mark with a face" class="w-24 h-24 object-cover mr-4"/>
             <div>
                 <h2 class="text-2xl font-bold mb-4">About Me</h2>
                 <p class="mb-4">Learn more about my journey, experiences, and the values I stand for.</p>
-                <a href="/about" class="text-blue-500 underline">Discover More</a>
+                <a href="/about" class="text-blue-500 underline" aria-label="Discover more about Christopher James">Discover More</a>
             </div>
         </div>
 
-        <div class="bg-blue-100 p-6 rounded-md flex items-center hover:bg-blue-200 hover:shadow-md transition duration-300 ease-in-out">
-            <img src="/images/projects.svg" alt="Projects" class="w-24 h-24 object-cover mr-4"/>
+        <div class="bg-blue-100 p-6 rounded-xl flex items-center hover:bg-blue-200 hover:shadow-md transition
+                    duration-300 ease-in-out dark:bg-slate-700 dark:hover:bg-slate-800">
+            <img src="/images/projects.svg" alt="Projects" aria-label="Illustration of a laptop with a rocket ship blasting off" class="w-24 h-24 object-cover mr-4"/>
             <div>
                 <h2 class="text-2xl font-bold mb-4">Projects</h2>
                 <p class="mb-4">Explore the projects I've worked on and the problems I've solved.</p>
-                <a href="/projects" class="text-blue-500 underline">View Projects</a>
+                <a href="/projects" class="text-blue-500 underline" aria-label="View projects by Christopher James">View Projects</a>
             </div>
         </div>
 
-        <div class="bg-blue-100 p-6 rounded-md flex items-center hover:bg-blue-200 hover:shadow-md transition duration-300 ease-in-out">
-            <img src="/images/services.svg" alt="Services" class="w-24 h-24 object-cover mr-4"/>
+        <div class="bg-blue-100 p-6 rounded-xl flex items-center hover:bg-blue-200 hover:shadow-md transition
+                    duration-300 ease-in-out dark:bg-slate-700 dark:hover:bg-slate-800">
+            <img src="/images/services.svg" alt="Services" aria-label="Illustration of a cog wheel" class="w-24 h-24 object-cover mr-4"/>
             <div>
                 <h2 class="text-2xl font-bold mb-4">Services</h2>
                 <p class="mb-4">Find out more about the services I offer and how I can help you.</p>
-                <a href="/services" class="text-blue-500 underline">Explore Services</a>
+                <a href="/services" class="text-blue-500 underline" aria-label="Explore services offered by Christopher James">Explore Services</a>
             </div>
         </div>
 
-        <div class="bg-blue-100 p-6 rounded-md flex items-center hover:bg-blue-200 hover:shadow-md transition duration-300 ease-in-out">
-            <img src="/images/contact.svg" alt="Contact Me" class="w-24 h-24 object-cover mr-4"/>
+        <div class="bg-blue-100 p-6 rounded-xl flex items-center hover:bg-blue-200 hover:shadow-md transition
+                    duration-300 ease-in-out dark:bg-slate-700 dark:hover:bg-slate-800">
+            <img src="/images/contact.svg" alt="Contact Me" aria-label="Illustration of two chat bubbles" class="w-24 h-24 object-cover mr-4"/>
             <div>
                 <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
                 <p class="mb-4">Let's get in touch! I'd love to hear from you and discuss potential opportunities.</p>
-                <a href="/contact" class="text-blue-500 underline">Contact Now</a>
+                <a href="/contact" class="text-blue-500 underline" aria-label="Contact Christopher James">Contact Now</a>
             </div>
         </div>
     </section>
 
-    <section class="text-center my-6 mx-6 md:mx-12 p-6 bg-blue-300 rounded-md">
+    <section aria-label="Mission Statement" class="text-center my-6 mx-6 md:mx-12 p-6 bg-blue-300 dark:bg-slate-800 rounded-xl">
         <h2 class="text-3xl font-bold mb-4">My Mission</h2>
         <p class="text-lg mb-4">To leverage innovative cloud technologies to drive transformation, optimize operations,
             and deliver value, while continuously expanding my knowledge and contributing to the tech community.</p>
