@@ -1,7 +1,7 @@
 <header class="bg-blue-500 dark:bg-slate-900 flex justify-between items-center">
     <a href="/" class="flex items-center p-4">
         <!-- Logo -->
-        <img src="/images/cloud-logo.svg" alt="cloud logo" aria-label="Illustration of a cloud with cogs inside and an arrow pointing up into the cloud" class="h-16">
+        <img src="/images/cloud-logo.svg" alt="" aria-label="Illustration of a cloud with cogs inside and an arrow pointing up into the cloud" class="h-16">
         <div>
             <p class="text-white text-xl font-bold">Christopher James</p>
             <p class="text-white text-sm">Cloud Engineer</p>
@@ -10,14 +10,14 @@
 
 
     <!-- Hamburger Menu - visible on small screens -->
-    <button id="menuToggle" aria-label="Open Navigation Menu" class="md:hidden p-2 hover:bg-blue-700 dark:hover:bg-slate-800">
+    <button id="menuToggle" role="button" aria-label="Open Navigation Menu" class="md:hidden p-2 hover:bg-blue-700 dark:hover:bg-slate-800">
         <img src="/images/hamburger.svg" aria-label="Hamburger menu icon" alt="hamburger menu icon" class="h-6">
     </button>
 
     <!-- Navigation Links -->
     <nav id="navLinks" aria-label="Primary Navigation" class="hidden text-gray-100 flex-col w-full bg-blue-500
                                    dark:bg-slate-900 fixed top-24 left-0 z-20 md:w-auto md:flex md:static">
-        <ul class="md:flex md:items-end">
+        <ul class="md:flex md:items-center">
             <li>
                 <% if (title === "Home") { %>
                     <p aria-label="Current page: Home" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Home</p>
