@@ -1,8 +1,39 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main>
+<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100 p-6">
+    <section aria-labelledby="contact-info-title" class="p-6 bg-blue-200 dark:bg-slate-800 rounded-xl mb-12 text-center">
+        <h1 id="contact-info-title" class="text-3xl font-extrabold mb-4">Contact Information</h1>
+        <p class="mb-4">Feel free to reach out to me via the following channels or use the contact form below.</p>
+        <div class="flex justify-center">
+            <a href="tel:226-236-0959" class="contact-btn p-2 rounded-md bg-blue-300 hover:bg-blue-400 transition ease-in-out duration-300 dark:bg-slate-700 dark:hover:bg-slate-600 mx-2">
+                <img src="/images/phone.svg" alt="Phone Icon" class="w-20 h-20">
+            </a>
+            <a href="mailto:mindful.d3v@gmail.com" class="contact-btn p-2 rounded-md bg-blue-300 hover:bg-blue-400 transition ease-in-out duration-300 dark:bg-slate-700 dark:hover:bg-slate-600 mx-2">
+                <img src="/images/email.svg" alt="Email Icon" class="w-20 h-20">
+            </a>
+            <a href="https://github.com/Mindful-Developer" target="_blank" rel="noopener noreferrer" class="contact-btn p-2 rounded-md bg-blue-300 hover:bg-blue-400 transition ease-in-out duration-300 dark:bg-slate-700 dark:hover:bg-slate-600 mx-2">
+                <img src="/images/github.svg" alt="GitHub Icon" class="w-20 h-20">
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-james-96a7911b3/" target="_blank" rel="noopener noreferrer" class="contact-btn p-2 rounded-md bg-blue-300 hover:bg-blue-400 transition ease-in-out duration-300 dark:bg-slate-700 dark:hover:bg-slate-600 mx-2">
+                <img src="/images/linkedin.svg" alt="LinkedIn Icon" class="w-20 h-20">
+            </a>
+        </div>
+    </section>
 
+    <section aria-labelledby="contact-form-title" class="p-6 bg-blue-200 dark:bg-slate-800 rounded-xl">
+        <h2 id="contact-form-title" class="text-2xl font-bold mb-4">Send a Message</h2>
+        <form action="/thank-you" method="POST" class="grid gap-6">
+            <div class="grid lg:grid-cols-2 gap-6">
+                <input type="text" name="firstName" required placeholder="First Name" class="p-2 rounded-md border dark:bg-slate-800" aria-label="First Name"/>
+                <input type="text" name="lastName" required placeholder="Last Name" class="p-2 rounded-md border dark:bg-slate-800" aria-label="Last Name"/>
+            </div>
+            <input type="tel" name="contactNumber" required placeholder="Contact Number" class="p-2 rounded-md border dark:bg-slate-800" aria-label="Contact Number"/>
+            <input type="email" name="emailAddress" required placeholder="Email Address" class="p-2 rounded-md border dark:bg-slate-800" aria-label="Email Address"/>
+            <textarea name="message" required placeholder="Your Message" class="p-2 rounded-md border dark:bg-slate-800" aria-label="Message" rows="5"></textarea>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md transition ease-in-out duration-300 dark:bg-slate-700 dark:hover:bg-slate-600">Send Message</button>
+        </form>
+    </section>
 </main>
 
 <%- include('partials/footer') %>

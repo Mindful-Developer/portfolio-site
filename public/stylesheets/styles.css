@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#navLinks ul li a,
-#navLinks ul li p {
-  display: flex;
-  align-items: center;
+.service-card {
+  @apply bg-blue-100 p-6 rounded-xl flex items-center hover:bg-blue-200 hover:shadow-md transition duration-300 ease-in-out dark:bg-slate-700 dark:hover:bg-slate-800;
 }

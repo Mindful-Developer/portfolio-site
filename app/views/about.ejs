@@ -1,8 +1,36 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main>
+<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100 p-6">
+    <section aria-label="Description" class="text-center m-6 md:m-12 bg-blue-100 dark:bg-slate-700 p-6 rounded-xl">
+        <img src="/images/christopher-james.png" alt="Christopher James" class="w-48 h-48 object-cover mx-auto rounded-full mb-4 lg:w-64 lg:h-64" />
+        <h1 class="text-3xl font-extrabold mb-4">Christopher James</h1>
+        <p class="text-lg mb-4">
+            I am a passionate and versatile software developer with a focus on building efficient, scalable, and
+            reliable applications. My diverse skill set includes cloud engineering, web development, mobile app
+            development, and proficiency in multiple programming languages like Rust and Python. I'm committed
+            to leveraging my skills to solve complex problems and create value.
+        </p>
+    </section>
 
+    <section aria-label="Resume Section" class="flex flex-col items-center">
+        <img src="/images/christopher-james-resume.png" alt="Resume" class="rounded-xl mx-auto" usemap="#resumeMap">
+
+        <map name="resumeMap">
+            <area shape="rect" coords="32,365,218,449" href="tel:226-236-0959" alt="Phone">
+            <area shape="rect" coords="35,477,352,561" href="mailto:mindful.d3v@gmail.com" alt="Email">
+            <area shape="rect" coords="35,588,434,711" href="https://www.linkedin.com/in/christopher-james-96a7911b3/" target="_blank" alt="LinkedIn">
+            <area shape="rect" coords="781,1680,1213,1721" href="https://github.com/Mindful-Developer" target="_blank" alt="GitHub">
+        </map>
+        
+        <a href="/files/christopher-james-resume.pdf" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-700 text-white text-center text-xl font-bold py-8 px-16 rounded-xl max-w-min mt-6 dark:bg-slate-800 dark:hover:bg-slate-700">
+            <div class="flex justify-center content-center">
+                <img src="/images/pdf.svg" alt="PDF Icon" class="h-16">
+                Download PDF
+            </div>
+        </a>
+
+    </section>
 </main>
 
 <%- include('partials/footer') %>

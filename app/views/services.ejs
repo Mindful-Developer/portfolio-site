@@ -1,8 +1,52 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main>
+<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100">
+    <section aria-labelledby="services-title" class="text-center m-6 md:m-12">
+        <h1 id="services-title" class="text-4xl font-extrabold mb-4">Services Offered</h1>
+        <p class="text-lg mb-8">Leveraging a diverse skill set including Rust, Python, Cloud Engineering with AWS, and more, to offer comprehensive solutions tailored to your needs.</p>
+    </section>
 
+    <section aria-label="Cloud Engineering Section" class="mb-12 p-6 bg-blue-300 dark:bg-slate-800 rounded-xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Cloud Engineering</h2>
+        <img src="/images/cloud-engineering.svg" alt="Cloud Engineering" aria-label="Illustration representing cloud engineering" class="w-32 h-32 object-cover mb-4 mx-auto"/>
+        <p class="text-lg mb-4">Implementing scalable and efficient cloud solutions utilizing AWS, optimizing your operations and infrastructure for performance and reliability.</p>
+<!--        <a href="/services/cloud-engineering" class="text-blue-500 underline" aria-label="Explore Cloud Engineering services offered by Christopher James">Explore More</a>-->
+    </section>
+
+    <section aria-label="Other Services" class="grid lg:grid-cols-2 gap-6 mb-12">
+        <div class="service-card">
+            <img src="/images/web-development.svg" alt="Web Development Icon" class="w-24 h-24 object-cover mr-4"/>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+                <p class="mb-4">Building responsive and performant websites tailored to your needs and specifications, using modern web technologies and best practices.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="/images/mobile-apps.svg" alt="Mobile Apps Icon" class="w-24 h-24 object-cover mr-4"/>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Mobile Apps</h2>
+                <p class="mb-4">Designing and developing user-friendly mobile applications to deliver functionality and convenience to your users, on both Android and iOS platforms.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="/images/general-programming.svg" alt="General Programming Icon" class="w-24 h-24 object-cover mr-4"/>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">General Programming</h2>
+                <p class="mb-4">Offering a broad spectrum of programming solutions, utilizing different programming languages and paradigms to achieve optimal results.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="/images/database-management.svg" alt="Database Management Icon" class="w-24 h-24 object-cover mr-4"/>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Database Management</h2>
+                <p class="mb-4">Specializing in the design, implementation, and optimization of robust and scalable databases to ensure data integrity, security, and availability.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <%- include('partials/footer') %>
