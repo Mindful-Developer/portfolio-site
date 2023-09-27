@@ -1,19 +1,24 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100 p-6">
-    <section aria-label="Description" class="text-center m-6 md:m-12 bg-blue-100 dark:bg-slate-700 p-6 rounded-xl">
+<main aria-label="Main Content" class="container mx-auto text-black dark:text-gray-100 pb-6 flex flex-col items-center">
+    <section aria-labelledby="about-title" class="text-center m-6 md:m-12">
+        <h1 id="about-title" class="text-4xl font-extrabold mb-4">About Me</h1>
+        <p class="text-lg">Learn more about me.</p>
+    </section>
+
+    <section aria-label="Description" class="text-center mb-6 md:mb-12 bg-blue-100 dark:bg-slate-700 p-6 rounded-xl max-w-2xl mx-6">
         <img src="/images/christopher-james.png" alt="Christopher James" class="w-48 h-48 object-cover mx-auto rounded-full mb-4 lg:w-64 lg:h-64" />
         <h1 class="text-3xl font-extrabold mb-4">Christopher James</h1>
         <p class="text-lg mb-4">
-            I am a passionate and versatile software developer with a focus on building efficient, scalable, and
-            reliable applications. My diverse skill set includes cloud engineering, web development, mobile app
-            development, and proficiency in multiple programming languages like Rust and Python. I'm committed
-            to leveraging my skills to solve complex problems and create value.
+            I'm a passionate software developer with a focus on building efficient, scalable, and
+            reliable applications. My skill set includes cloud engineering, web development, mobile app
+            development, and proficiency in multiple programming languages like Rust, C#, JavaScript, and Python.
+            I'm committed to leveraging my skills to solve complex problems and create value.
         </p>
     </section>
 
-    <section aria-label="Resume Section" class="flex flex-col items-center">
+    <section aria-label="Resume Section" class="flex flex-col items-center mx-6">
         <img src="/images/christopher-james-resume.png" alt="Resume" class="rounded-xl mx-auto" usemap="#resumeMap">
 
         <map name="resumeMap">
