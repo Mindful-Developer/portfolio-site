@@ -620,6 +620,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -646,6 +651,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -1045,9 +1054,17 @@ video {
     border-radius: 0.75rem;
   }
 
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 

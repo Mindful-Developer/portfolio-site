@@ -17,12 +17,12 @@
     <!-- Navigation Links -->
     <nav id="navLinks" aria-label="Primary Navigation" class="hidden text-gray-100 flex-col w-full bg-blue-500
                                    dark:bg-slate-900 fixed top-24 left-0 z-20 md:w-auto md:flex md:static">
-        <ul class="md:flex md:items-center">
+        <ul class="w-full md:flex md:items-center">
             <li>
                 <% if (title === "Home") { %>
                     <p aria-label="Current page: Home" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Home</p>
                 <% } else { %>
-                    <a href="/" aria-label="Home Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Home</a>
+                    <a href="/" aria-label="Home Page" class="p-2 block md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Home</a>
                 <% } %>
             </li>
 
@@ -30,7 +30,7 @@
                 <% if (title === "About") { %>
                     <p aria-label="Current page: About Me" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">About Me</p>
                 <% } else { %>
-                    <a href="/about" aria-label="About Me Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">About Me</a>
+                    <a href="/about" aria-label="About Me Page" class="p-2 block md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">About Me</a>
                 <% } %>
             </li>
 
@@ -38,7 +38,7 @@
                 <% if (title === "Projects") { %>
                     <p aria-label="Current page: Projects" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Projects</p>
                 <% } else { %>
-                    <a href="/projects" aria-label="Projects Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Projects</a>
+                    <a href="/projects" aria-label="Projects Page" class="p-2 block md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Projects</a>
                 <% } %>
             </li>
 
@@ -46,7 +46,7 @@
                 <% if (title === "Services") { %>
                     <p aria-label="Current page: Services" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Services</p>
                 <% } else { %>
-                    <a href="/services" aria-label="Services Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Services</a>
+                    <a href="/services" aria-label="Services Page" class="p-2 block md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Services</a>
                 <% } %>
             </li>
 
@@ -54,7 +54,7 @@
                 <% if (title === "Contact") { %>
                     <p aria-label="Current page: Contact Me" class="p-2 md:mx-1 md:py-5 lg:p-5 bg-blue-700 dark:bg-slate-800 font-bold md:rounded-xl lg:mx-3">Contact Me</p>
                 <% } else { %>
-                    <a href="/contact" aria-label="Contact Me Page" class="p-2 md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Contact Me</a>
+                    <a href="/contact" aria-label="Contact Me Page" class="p-2 block md:mx-1 md:py-5 lg:p-5 hover:bg-blue-700 dark:hover:bg-slate-800 md:rounded-xl lg:mx-3">Contact Me</a>
                 <% } %>
             </li>
         </ul>
