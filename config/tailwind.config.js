@@ -1,3 +1,10 @@
+/*
+  tailwind.config.js
+  Christopher James
+  301252282
+  2023-10-01
+ */
+
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");

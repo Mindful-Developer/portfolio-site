@@ -1,5 +1,12 @@
 #!/usr/config/env node
 
+/*
+  server.js
+  Christopher James
+  301252282
+  2023-10-01
+ */
+
 /**
  * Module dependencies.
  */
